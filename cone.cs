@@ -9,7 +9,7 @@ namespace WebApplication2
 {
     public class conn
     {
-        private static string _chaineConnection = @"Data Source=.\sqlexpress;Initial Catalog=biblio203;Integrated Security=True" ;
+        private static string _chaineConnection = @"Data Source=yourComputerName;Initial Catalog=yourDatabase;Integrated Security=True" ;
 
         
 
