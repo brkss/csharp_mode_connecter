@@ -5,18 +5,21 @@ using System.Web;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace yourapp
+namespace WebApplication2
 {
     public class conn
     {
-        private static string _chaineConnection;
+        private static string _chaineConnection = @"Data Source=.\sqlexpress;Initial Catalog=biblio203;Integrated Security=True" ;
 
-        public conn(string chaine)
+        
+
+        public conn()
         {
-            _chaineConnection = chaine;
+            //_chaineConnection = chaine;
         }
 
         public static SqlConnection cn = new SqlConnection(_chaineConnection);
+
         private void conns()
         {
             if (cn.State == ConnectionState.Closed)
@@ -75,6 +78,7 @@ namespace yourapp
             }
             return false ;
         }
+
 
     }
 }
